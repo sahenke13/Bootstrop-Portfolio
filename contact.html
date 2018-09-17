@@ -33,6 +33,7 @@
                 } 
         #masthead{
                     background: white;
+                    z-index: 10;
         }        
             
         #myName {
@@ -57,10 +58,14 @@
             padding: 20px 30px 20px 30px;
             background: white;
            }
-        
+        h1{
+            padding: 10px 0px 20px 0px;
+            border-bottom: 1px solid gray;
+            margin:10px;
+        }
         
         body{
-            background: gray;
+            background: url("./assets/images/full-bloom.png");
         }
         #footer {
             background: #666666;
@@ -72,15 +77,20 @@
             text-align: center;
             margin-left: auto;
             margin-right: auto;
-        }        
-        
+        }      
+        @media screen and (max-width: 580px){
+            #myName{
+            margin-left: 5%;
+            margin-right: 20%;
+                    }  
+                }
         
     </style>
     <script src="main.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id = "masthead" class="navbar navbar-expand-lg">
         <a id="myName" class="navbar-brand" href="#">Steven Henke</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,7 +106,7 @@
     </nav>
     <div id="formContainer">
         <form>
-            <div>Contact</div>
+            <div><h1>Contact</h1></div>
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="ContactLabel" placeholder="Name Here" required="required">
@@ -111,7 +121,8 @@
                 <textarea class="form-control" id="MessageLabel" rows="8" placeholder="Message Here" required="required"></textarea>
             </div>
             <div><input type="submit"></diV> 
-        </form> </div>
+        </form>
+     </div>
         
         <!-- fixed footer nav bar -->
                 <nav id="footer" class="navbar fixed-bottom">

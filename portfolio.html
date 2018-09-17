@@ -34,8 +34,15 @@
         #masthead
         {
             background: white;
+            z-index: 10;
         }
-                        
+        
+        h1{
+            padding: 10px 0px 20px 0px;
+            border-bottom: 1px solid gray;
+            margin:10px;
+        }
+                       
                     
         #myName {
                         
@@ -48,7 +55,7 @@
             bottom: 0;
                     }
         body{
-            background: gray;
+            background: url("./assets/images/full-bloom.png");
 
                 }
         #mainContainer{
@@ -69,11 +76,25 @@
             border-top: 4px solid #4aaaa5;
                     
                 }
+        #ImgBanner{
+            position: relative;
+            bottom: 120px;
+            background:#4aaaa5;
+            padding: 5%;
+            text-align: center;
+            margin-bottom: 5%;
+        }
         a.navbar-brand{
             text-align: center;
             margin-left: auto;
             margin-right: auto;
                 }    
+        
+        @media screen and (max-width: 580px){
+            #myName{
+            margin-left: 5%;
+            margin-right: 20%;
+                    }
                
         </style>
     <script src="main.js"></script>
@@ -95,22 +116,24 @@
             </div>
         </div>
     </nav>
+
     <!-- add container here with columns and row -->
+
     <div id="mainContainer" class="container">
+            <h1>Portfolio</h1>
         <div class="row">
-            <div id="portImage" class="col-md-4"><img src="assets/images/familyHike.jpg" width="150px" height="150px">
-            </div>
-            <div id="portImage" class="col-md-4"><img src="assets/images/familyHike.jpg" width="150px" height="150px"></div>
+            <div id="portImage" class="col-md-4"><img src="assets/images/familyHike.jpg" width="100%" height="auto"><div id= "ImgBanner">Hiking</div></div>
+            <div id="portImage" class="col-md-4"><img src="assets/images/familyHike.jpg" width="100%" height="auto"><div id= "ImgBanner">Family Time</div></div>
             <div id="portImage" class="col-md-4"></div>
         </div>
         <div class="row">
-            <div id="portImage" class="col-md-4"><img src="assets/images/familyHike.jpg" width="150px" height="150px"></div>
-            <div id="portImage" class="col-md-4"><img src="assets/images/familyHike.jpg" width="150px" height="150px"></div>
+            <div id="portImage" class="col-md-4"><img src="assets/images/familyHike.jpg" width="100%" height="auto"><div id= "ImgBanner">HandyMan</div></div>
+            <div id="portImage" class="col-md-4"><img src="assets/images/familyHike.jpg" width="100%" height="auto"><div id= "ImgBanner">RPG</div></div>
             <div id="portImage" class="col-md-4"></div>
 
         </div>
         <div class="row">
-            <div id="portImage" class="col-md-4"><img src="assets/images/familyHike.jpg" width="150px" height="150px"></div>
+            <div id="portImage" class="col-md-4"><img src="assets/images/familyHike.jpg" width="100%" height="auto"><div id= "ImgBanner">Projects</div></div>
             <div id="portImage" class="col-md-4"></div>
             <div id="portImage" class="col-md-4"></div>
 

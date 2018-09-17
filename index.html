@@ -35,6 +35,7 @@
         #masthead
                 {
                     background: white;
+                    z-index: 10;
         }        
             
         #myName {
@@ -49,7 +50,7 @@
             }
         
         body{
-            background: gray;
+            background: url("./assets/images/full-bloom.png");
         }
 
        
@@ -58,7 +59,7 @@
         #wrapper {
             margin-right: auto;
             margin-left: auto;
-            margin-top: 10%;
+            margin-top: 7%;
             margin-bottom: 10%;
             width: 70%;
             height: auto;
@@ -67,7 +68,7 @@
             
         }
         #bio{
-            padding: 2em;
+            padding: 1em;
            
 
         }
@@ -79,13 +80,15 @@
             
             
         h1{
-            padding: 1%;
-        }
-        #aboutMeLabel{
+            padding: 10px 0px 20px 0px;
             border-bottom: 1px solid gray;
-            margin: 2%;
-            width: 90%;
+            margin:10px;
+
         }
+        #aboutImg{
+            margin: auto 1% auto 1%;
+        }
+       
         #footer {
             background: #666666;
             border-top: 4px solid #4aaaa5;
@@ -96,7 +99,13 @@
             margin-left: auto;
             margin-right: auto;
         }    
-        
+        @media screen and (max-width: 580px){
+            #myName{
+                margin-left: 5%;
+                margin-right: 20%;
+            }
+
+        }
         
     </style>
     <script src="main.js"></script>
@@ -104,16 +113,16 @@
 
 <body>
     <!-- nav bar -->
-    <nav  id =  "masthead" class="navbar navbar-expand-lg navbar-light ">
-        
-            <a id="myName" class="navbar-brand" href="index.html">Steven Henke</a>
-        
+    <nav id="masthead" class="navbar navbar-expand-lg navbar-light ">
+
+        <a id="myName" class="navbar-brand" href="index.html">Steven Henke</a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div  class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div   class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
                 <a id="link" class="nav-item nav-link active" href="index.html">About <span class="sr-only">(current)</span></a>
                 <a id="link" class="nav-item nav-link" href="portfolio.html">Portfolio</a>
                 <a id="link" class="nav-item nav-link" href="contact.html">Contact</a>
@@ -124,33 +133,44 @@
 
     <div id="wrapper" class="container">
         <div class="row">
-            <div id="aboutMeLabel" class="col-md-12">
+            <div class="col-md-12">
                 <h1>About Me</h1>
             </div>
         </div>
         <div class="row">
-            <div id="AboutImg" class="col-md-2"><img class="img-fluid rounded" src="assets/images/familyHike.jpg" alt="Family Hike"
-                    width="100%" height="auto">
+            <div id="AboutImg" class="col-md-2"><img class="img-fluid rounded"  src="assets/images/familyHike.jpg" alt="Family Hike">
             </div>
-            <div id="bio" class="col-md-10">
-                <p>Curious, I believe that is the best word to describe myself. I love adventures and have a myriad of
-                    interests, including
+            
+            <div id="bio" class="col-md-9">
+                <p>No! Luke, run away, far away. If he can feel your presence, then leave this place. I wish I could go
+                    with you. No, you don't. You've always been strong. But, why must you confront him? Because...there
+                    is good in him. I've felt it. He won't turn me over to the Emperor. I can save him. I can turn him
+                    back to the good side. I have to try. Hey, what's goin' on? Nothing. I - just want to be alone for
+                    a little while. Nothing? Come on, tell me. What's goin' on? I...I can't tell you. Did you tell
+                    Luke? Is that who you could tell? I... Ahhh... I'm sorry. Hold me
 
                 </p>
-
             </div>
-            <div id = "bio1" class="row">
+            <div class= "col-md-1"></div>
+            <div id="bio1" class="row">
+                    <div></div>
                 <div class="col-md-12">
-                    <p>Some more about myself and how cool I think I am.
+                    <p>The Death Star plans are not in the main computer. Where are those transmissions you
+                        intercepted? What have you done with those plans? We intercepted no transmissions. Aaah....This
+                        is a consular ship. Were on a diplomatic mission. If this is a consular ship...were is the
+                        Ambassador? Commander, tear this ship apart until you've found those plans and bring me the
+                        Ambassador. I want her alive! There she is! Set for stun! She'll be all right. Inform Lord
+                        Vader we have a prisoner.
                     </p>
                 </div>
+                
 
             </div>
         </div>
 
     </div>
     <!-- fixed footer nav bar -->
-    <nav id = "footer" class="navbar fixed-bottom">
+    <nav id="footer" class="navbar fixed-bottom">
         <a class="navbar-brand" href="">Copyright&copy</a>
     </nav>
 
