@@ -1,0 +1,165 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Index Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+       
+        nav{
+            height: 60px;
+        }
+        #link {
+            color: #777777; 
+            float: right;
+            margin-left: 1%;
+            background: white;
+            }
+        #linkGroup {
+                
+            width: 170px;
+            margin-right: 100px;
+            background: #cccccc;
+            color: #777777;
+            padding-right: 20%;
+                } 
+        #masthead
+                {
+                    background: white;
+        }        
+            
+        #myName {
+                
+            margin-right: 45%;
+            margin-left: 15%;
+            color: #777777;
+            background: #4aaaa5;
+            padding: 15px;
+            width: auto;
+            bottom: 0;
+            }
+        
+        body{
+            background: gray;
+        }
+
+       
+
+      
+        #wrapper {
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            width: 70%;
+            height: auto;
+            background: white;
+            padding: 1%;
+            
+        }
+        #bio{
+            padding: 2em;
+           
+
+        }
+        #bio1{
+            padding: 2em;
+           
+
+        }
+            
+            
+        h1{
+            padding: 1%;
+        }
+        #aboutMeLabel{
+            border-bottom: 1px solid gray;
+            margin: 2%;
+            width: 90%;
+        }
+        #footer {
+            background: #666666;
+            border-top: 4px solid #4aaaa5;
+            
+        }
+        a.navbar-brand{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }    
+        
+        
+    </style>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav  id =  "masthead" class="navbar navbar-expand-lg navbar-light ">
+        
+            <a id="myName" class="navbar-brand" href="index.html">Steven Henke</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div  class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div   class="navbar-nav">
+                <a id="link" class="nav-item nav-link active" href="index.html">About <span class="sr-only">(current)</span></a>
+                <a id="link" class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                <a id="link" class="nav-item nav-link" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="wrapper" class="container">
+        <div class="row">
+            <div id="aboutMeLabel" class="col-md-12">
+                <h1>About Me</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div id="AboutImg" class="col-md-2"><img class="img-fluid rounded" src="assets/images/familyHike.jpg" alt="Family Hike"
+                    width="100%" height="auto">
+            </div>
+            <div id="bio" class="col-md-10">
+                <p>Curious, I believe that is the best word to describe myself. I love adventures and have a myriad of
+                    interests, including
+
+                </p>
+
+            </div>
+            <div id = "bio1" class="row">
+                <div class="col-md-12">
+                    <p>Some more about myself and how cool I think I am.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- fixed footer nav bar -->
+    <nav id = "footer" class="navbar fixed-bottom">
+        <a class="navbar-brand" href="">Copyright&copy</a>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
