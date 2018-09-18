@@ -10,22 +10,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <style>
-        * {
+        *{
                 box-sizing: border-box;
             }
         nav{
                 height: 60px;
             }
         
-         #link {
+        #link{
             color: #777777; 
             float: right;
             margin-left: 1%;
             background: white;
             }
-        #linkGroup {
+        #linkGroup{
                 
-             width: 170px;
+            width: 170px;
             margin-right: 100px;
             background: #cccccc;
             color: #777777;
@@ -58,6 +58,9 @@
             padding: 20px 30px 20px 30px;
             background: white;
            }
+        a{
+            color:#cccccc;
+        }
         h1{
             padding: 10px 0px 20px 0px;
             border-bottom: 1px solid gray;
@@ -67,31 +70,36 @@
         body{
             background: url("./assets/images/full-bloom.png");
         }
-        #footer {
+
+        #footer{
             background: #666666;
             border-top: 4px solid #4aaaa5;
             text-align: center;
-            
-        }
+        }   
         a.navbar-brand{
             text-align: center;
             margin-left: auto;
             margin-right: auto;
-        }      
+            color:#cccccc;
+                }
+        
+
         @media screen and (max-width: 580px){
             #myName{
             margin-left: 5%;
             margin-right: 20%;
                     }  
-                }
+        }
+            
         
     </style>
     <script src="main.js"></script>
 </head>
 
 <body>
-    <nav id = "masthead" class="navbar navbar-expand-lg">
-        <a id="myName" class="navbar-brand" href="#">Steven Henke</a>
+    <--nav bar-->
+    <nav id = "masthead" class="navbar navbar-expand-lg navbar-light">
+        <a id="myName" class="navbar-brand" href="index.html">Steven Henke</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -104,6 +112,9 @@
             </div>
         </div>
     </nav>
+
+     <--container-->
+
     <div id="formContainer">
         <form>
             <div><h1>Contact</h1></div>

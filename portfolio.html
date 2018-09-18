@@ -15,6 +15,7 @@
                 }
         nav{
             height: 60px;
+            color: white;
                 }
             
         #link {
@@ -74,6 +75,7 @@
         #footer {
             background: #666666;
             border-top: 4px solid #4aaaa5;
+            color: white;
                     
                 }
         #ImgBanner{
@@ -84,17 +86,18 @@
             text-align: center;
             margin-bottom: 5%;
         }
-        a.navbar-brand{
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-                }    
+       
+        
+        #bottomLink{
+            background: red;
+        }
         
         @media screen and (max-width: 580px){
             #myName{
             margin-left: 5%;
             margin-right: 20%;
                     }
+                }
                
         </style>
     <script src="main.js"></script>
@@ -142,9 +145,8 @@
 
 
 
-    <!-- footer -->
-    <nav id = "footer" class="navbar fixed-bottom">
-        <a class="navbar-brand" href="index.html">Copyright&copy</a>
+    <nav id= "footer" class="navbar fixed-bottom">
+        <a id="bottomLink" href="index.html">Copyright&copy</a>
     </nav>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
